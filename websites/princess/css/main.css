@@ -1,0 +1,484 @@
+/* CSS Document */
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'oldstyle7';
+    src: url('oldstyle7std-webfont.eot');
+    src: url('oldstyle7std-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oldstyle7std-webfont.woff') format('woff'),
+         url('oldstyle7std-webfont.ttf') format('truetype'),
+         url('oldstyle7std-webfont.svg#old_style_7_stdroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'optimaregular';
+    src: url('optima_regular-webfont.eot');
+    src: url('optima_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('optima_regular-webfont.woff') format('woff'),
+         url('optima_regular-webfont.ttf') format('truetype'),
+         url('optima_regular-webfont.svg#optimaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('helvetica.eot');
+    src: url('helvetica.eot') format('embedded-opentype'),
+         url('helvetica.woff') format('woff'),
+         url('helvetica.ttf') format('truetype'),
+         url('helvetica.svg#HelveticaNeueRegular') format('svg');
+}
+
+html { 
+	margin: 0;
+	padding: 0;
+	min-width:960px;
+}
+
+body {
+	background-color: #b244a5;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.bodywrapper {
+	background: url(../images/background.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	width:inherit;
+	height:1080px;
+	overflow:hidden;
+}
+
+.girls_on_set, .thumbs, .thumbs_diamond_top, .ladies {
+	pointer-events:none;
+}
+
+.content {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	overflow:visible !important;
+}
+
+.logo {
+	width: 210px;
+	height: 170px;
+	position: absolute;
+	background-image:url(../images/logo.png);
+	left: 50%;
+	top: 0px;
+	margin-left: -105px;
+	z-index:10;
+	
+}
+
+.girls_on_set_wrapper {
+	width: 219px;
+	height: 231px;
+	position: absolute;
+	right: -20px;
+	top: 42px;
+	overflow:hidden;
+	z-index:10;
+}
+
+.girls_on_set {
+	width: 219px;
+	height: 221px;
+	position: absolute;
+	background-image:url(../images/girls_on_set.png);
+	right: 0px;
+	top: 0px;
+}
+
+.girls_on_set_zoom {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	background-image: url(../images/girls_on_set_zoom.png);
+	left: 88px;
+	top: 180px;
+}
+
+.girls_on_set:hover .girls_on_set_zoom {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	background-image: url(../images/girls_on_set_zoom2.png) ;
+	left: 88px;
+	top: 180px;
+}
+
+.thumbs {
+	width: 530px;
+	height: 246px;
+	position: absolute;
+	background-image: url(../images/thumbs.png);
+	left: 50%;
+	top: 560px;
+	margin-left: -264px;
+	z-index:10;
+}
+
+.thumbs a, .thumbs a:hover {
+	text-decoration: none;
+}
+
+.thumbs_diamond_top {
+	width: 95px;
+	height: 30px;
+	position: absolute;
+	background-image: url(../images/thumbs_diamond_top.png);
+	left: 220px;
+	top: 8px;
+	z-index: 3;
+}
+
+.thumbs_diamond_bot {
+	width: 95px;
+	height: 30px;
+	position: absolute;
+	background-image: url(../images/thumbs_diamond_bot.png);
+	left: 220px;
+	top: 203px;
+	z-index: 3;
+}
+
+.thumb_holder3 {
+	width: 151px;
+	height: 181px;
+	position: absolute;
+	background-image: url(../images/thumb_3_elevator.png);
+	left: 38px;
+	top: 32px;
+	z-index: 1;
+}
+
+.thumb_holder3a {
+	width: 146px;
+	height: 180px;
+	position: absolute;
+	background-image: url(../images/thumb_holder_hover.png);
+    top: 33px;
+	left: 40px;
+	z-index: 2;
+	display:none;
+}
+
+.menulink:hover .thumb_holder3a {
+	display:block;
+}
+
+.thumb_holder2 {
+	width: 151px;
+	height: 181px;
+	position: absolute;
+	background-image: url(../images/thumb_2_castle.png);
+	left: 191px;
+	top: 32px;
+	z-index: 1;
+
+}
+
+.menulink .thumbs_txt {
+	color:#800080 !important;
+}
+
+.thumb_holder2a {
+	width: 146px;
+	height: 180px;
+	position: absolute;
+	background-image: url(../images/thumb_holder_hover.png);
+    top: 33px;
+	left: 194px;
+	z-index: 2;
+	display:none;
+}
+
+.menulink:hover .thumb_holder2a {
+	display:block;
+}
+
+
+.thumb_holder1 {
+	width: 151px;
+	height: 181px;
+	position: absolute;
+	background-image: url(../images/thumb_1_mirror.png);
+	top: 32px;
+	z-index: 1;
+	left: 342px;
+
+}
+
+.thumb_holder1a {
+	width: 146px;
+	height: 180px;
+	position: absolute;
+	background-image: url(../images/thumb_holder_hover.png);
+    top: 33px;
+	left: 345px;
+	z-index: 2;
+	display:none;
+}
+
+.menulink:hover .thumb_holder1a {
+	display:block;
+}
+
+.ladies {
+	width: 1381px;
+	height: 566px;
+	position: absolute;
+	background-image: url(../images/ladies.png);
+	left: 476px;
+	top: 483px;
+	margin-left: -691px;
+	z-index: 5;
+}
+
+.ladies_wrapper
+{
+	position:absolute;
+	height:566px;
+	width:960px;
+	left:50%;
+	margin-left:-480px;
+	overflow:visible;
+	top: 481px;
+}
+
+.video_container {
+	width: 956px;
+	height: 899px;
+	position: absolute;
+	background-image: url(../images/video_container.png);
+	left: 34px;
+	top: 27px;
+	z-index: 0;
+}
+
+.video_bar_left {
+	width: 35px;
+	height: 112px;
+	position: absolute;
+	background-image: url(../images/video_cont_bar_left.png);
+	top: 275px;
+	left: 46px;
+}
+
+.video_bar_right {
+	width: 35px;
+	height: 112px;
+	position: absolute;
+	background-image: url(../images/video_cont_bars_right.png);
+	top: 275px;
+	left: 809px;
+}
+
+.vid_holder {
+	width: 741px;
+	height: 440px;
+	position: absolute;
+	background-image: url(../images/vid_holder_pic.png);
+	top: 114px;
+	left: 76px;
+	z-index: -1;
+}
+
+.play {
+	width: 300px;
+	height: 301px;
+	position: absolute;
+	background-image: url(../images/play_btn.png);
+	top: 180px;
+	left: 295px;
+	z-index:10;
+}
+
+.playspark {
+	width:250px;
+	height:250px;
+	position:absolute;
+	top: 200px;
+	left: 295px;
+	background-image:url(../images/sparkles.png);
+	z-index:11;
+}
+
+
+/*.videolink:hover .play {
+	width: 509px;
+	height: 301px;
+	position: absolute;
+	background-image: url(../images/play_btn_hover.png);
+	top: 180px;
+	left: 192px;
+}*/
+
+.thumbs_play_btn {
+	width: 108px;
+	height: 38px;
+	position: absolute;
+	background-image: url(../images/thumb_play_btn.png);
+	top: 120px;
+	left: 18px;
+}
+
+.thumbs_play_btn:hover {
+	width: 108px;
+	height: 38px;
+	position: absolute;
+	background-image: url(../images/thumb_play_btn_rol.png);
+	top: 120px;
+	left: 18px;
+}
+
+.thumb_holder3, .thumb_holder3a, .menulink:hover, .thumb_holder2, .thumb_holder2a, .thumb_holder1, .thumb_holder1a, .girls_on_set, .girls_on_set_zoom, .vid_holder {
+	pointer-events:auto;
+}
+
+.thumbs_title {
+	font-family: optimaregular;
+	font-size: 16px;
+	font-color: #b22293;
+	text-decoration: none;
+	text-align: left;
+	margin: 10px 12px 10px 12px;
+}
+
+.thumbs_txt {
+	font-family: optimaregular;
+	font-size: 12px;
+	font-color: #b22293;
+	text-decoration: none;
+	text-align: left;
+	margin: 10px 12px 10px 12px;
+}
+
+.body_txt {
+	font-family: oldstyle7;
+	font-size: 20px;
+	color:#FFF;
+	text-decoration: none;
+	text-align: center;
+	top: 890px;
+	width: 450px;
+	margin-left: -225px;
+	left: 50%;
+	position: absolute;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #b244a5;
+	top: 1060px;
+	}
+
+.footer_txt {
+	font-family: Helvetica;
+	margin: 0px auto;
+	position: relative;
+	width: 960px;
+	height: 29px;
+	font-family: helvetica;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+	color: #cb93b3;
+	padding-top: 11px;
+}
+
+.footer_txt a {
+	text-decoration: none;
+	color: #cb93b3;
+}
+
+.footer_txt span {
+	margin-left: 40px;
+}
+	
+
+.filter {
+	height: 2000px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 14;
+	display:none;
+}
+
+.girls_on_set_big {
+	height: 817px;
+	width: 953px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -476px;
+	z-index: 15;
+	background-image: url(../images/girls_on_set_big.png);
+	display: none;
+}
+
+.girls_on_set_big_x {
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: 56px;
+	left: 684px;
+	background-image: url(../images/girls_on_set_big_x.png);
+}
+
+.girls_on_set_big_x:hover {
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: 56px;
+	left: 684px;
+	background-image: url(../images/girls_on_set_big_x2.png);
+}
+
+.fade {
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   -moz-transition: opacity .3s ease-in-out;
+   -webkit-transition: opacity .3s ease-in-out;
+   }
+
+.fade:hover {
+    opacity: 1;
+}
+
+.matell {
+	width: 328px;
+	height: 162px;
+	position: absolute;
+	top: 50px;
+	left: 478px;
+	background-image: url(../images/mattel.png);
+	z-index: 3;
+}
+
+#player {
+    visibility:hidden;
+	/*display:none;*/
+}
+
+#iosplayer
+{
+	display:none;
+}

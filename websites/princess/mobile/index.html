@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Disney Princess</title>
+<meta name="viewport" content="width=640, initial-scale=0.5;">
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var Video1 = "http://www.youtube.com/watch_popup?v=OZYzdxXiUyA";//&autoplay=1&wmode=opaque&rel=0&showinfo=0";
+var Video2 = "http://www.youtube.com/watch_popup?v=PEjdzBz5D9I";//&autoplay=1&wmode=opaque&rel=0&showinfo=0";
+var Video3 = "http://www.youtube.com/watch_popup?v=lMwexSUd460";//&autoplay=1&wmode=opaque&rel=0&showinfo=0";
+
+$(document).ready(function(e) {	
+
+	$(".girls_on_set").click(function(){
+	$(".girls_on_set_big").fadeIn(500);
+	$(".filter").fadeIn(500); 
+ });
+ $(".girls_on_set_big_x").click(function(){
+ 	$(".girls_on_set_big").fadeOut(500);
+	$(".filter").fadeOut(500); 
+ });
+ 
+ $(".button").click(function(){
+ 	/*$('.Videoframe').attr("src", Video1);
+	$('.filter').show();
+	$('.youtubeplayer').show();*/
+	window.location.href = Video1;
+ });
+ $(".button2").click(function(){
+ 	/*$('.Videoframe').attr("src", Video2);
+	$('.filter').show();
+	$('.youtubeplayer').show();*/
+	window.location.href = Video2;
+ });
+ $(".button3").click(function(){
+ 	/*$('.Videoframe').attr("src", Video3);
+	$('.filter').show();
+	$('.youtubeplayer').show();*/
+	window.location.href = Video3;
+ });
+ 
+ $(".youtubeembedclose").click(function(){
+ 	/*$('.Videoframe').attr("src", "");
+	$('.filter').fadeOut(500);
+	$('.youtubeplayer').hide();*/
+ });
+ 
+});
+
+window.onload = function initialLoad(){
+	updateOrientation();
+}
+
+window.onorientationchange = function orientationChanged(){
+	updateOrientation();
+}
+
+function updateOrientation(){
+	//konfigurisem viewport tag
+	//var viewport = document.querySelector("meta[name=viewport]");
+	//var viewport = document.querySelector("meta[name=viewport]");
+	
+	//velicine
+	var vpwidth = 640; //640;
+    var vlwidth = 'device-width'; //640; //960; //'device-width'; //960;
+	
+    switch(window.orientation){
+    case 0:
+	$("meta[name=viewport]").attr('content', 'width=' + vpwidth + ', initial-scale=0.5, user-scalable=no;')
+	break;
+
+	case -90:
+	$("meta[name=viewport]").attr('content', 'width=' + vlwidth + ', initial-scale=0.75, user-scalable=no;')
+	break;
+
+	case 90:
+	$("meta[name=viewport]").attr('content', 'width=' + vlwidth  + ', initial-scale=0.75, user-scalable=no;')
+	break;
+
+	case 180:
+	$("meta[name=viewport]").attr('content', 'width=' + vpwidth + ', initial-scale=0.5, user-scalable=no;')
+	break;
+	}
+}
+
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="bodywrapper">
+	<!--Mattel_Logo-->
+ <div class="mattel_logo"></div>
+ 	<!--Disney_logo-->
+  <div class="logo"></div>
+    <!--Button1-->
+	<a href="#">
+	<div class="button">
+   		<div class="img_container"><div class="play_btn"></div><img src="images/picture_elevator.png"/></div>
+        <p class="span_text">HAIR<br/>ELEVATOR</p>
+	</div>
+    </a>
+    <!--Button2-->
+    <a href="#">
+    <div class="button2">
+    	 <div class="img_container"><div class="play_btn"></div><img src="images/picture_castle.png"/>
+         </div><p class="span_text">FULL<br/>CASTLE</p>
+    </div>
+	</a>
+	<!--Button3-->
+    <a href="#">
+    <div class="button3">
+   	  <div class="img_container"><div class="play_btn"></div><img src="images/picture_app.png"/></div>
+    	 <p class="span_text">MAGIC<br/>MIRROR APP</p>
+    </div>
+    </a>
+	<!--Footer_castle-->
+  <a href="#"><div class="girls_on_set"><div class="zoom_btn"></div></div></a>
+    <div class="filter"></div>
+    <div class="youtubeplayer">
+    	<a href="#"><div class="youtubeembedclose"></div></a>
+    	<div class="youtubeembed">
+        	<iframe class="Videoframe" width="640" height="400" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="girls_on_set_big">
+    <a href="#"><div class="girls_on_set_big_x"></div></a>
+</div>
+
+<div class="footer">
+	<div class="footer_txt">Disney Princess elements: © Disney<span>|</span><span>©2013 Mattel.  All Rights Reserved.</span></div>
+	
+</div>
+<!--end of bodywrapper-->
+</div>
+</body>
+</html>

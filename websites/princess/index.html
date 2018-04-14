@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Disney Princess</title>
+
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<!--<script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>-->
+
+<!--mattel tag data-->
+<script type="text/javascript">
+var utag_data = {
+}
+var iOS;
+var videoplayer;
+var IE;
+
+</script>
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+    
+    (function(a,b,c,d){
+    a='http://tags.tiqcdn.com/utag/mattel/disneyprincess/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+<!--TEALIUM SCRIPTS-->
+<script>
+    var videoIds = [  'lMwexSUd460', 'PEjdzBz5D9I' , 'OZYzdxXiUyA' ];
+	
+	
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+    
+    function onYouTubeIframeAPIReady() {
+        videoplayer = new YT.Player('player', {
+            videoId: videoIds[2],
+            width: 740,
+            height: 440,
+            playerVars: {
+                controls: 1,
+                showinfo: 0,
+                rel: 0,
+				wmode: 'opaque'
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange 
+            }
+        });
+    }; 
+
+	
+    window.onPlayerReady = function(event) {
+        //This will capture theURL ofthe embeded video and setitinto b.video_url
+        b.video_url = player.getVideoUrl();
+        ///Capture total length ofthe video and setto b.video_length
+        b.video_length - player.getDuration();
+        //Log thatthe video isready/open
+        console.log("Player ready");
+    };
+    window.onPlayerStateChange = function(event) {
+        //This will catch when the playeris played
+        if (event.data === YT.PlayerState.PLAYING) {
+            console.log("play");
+        }             
+        else if (event.data === YT.PlayerState.PAUSED) {
+            //This will catch when the playeris paused
+            console.log("pause");
+        } 
+        else if (event.data === YT.PlayerState.ENDED)	{
+        //This will catch when the player has completed
+            console.log("Complete");
+        }
+    };
+</script>
+<!--END OF TEALIUM SCRIPTS-->
+
+<script type="text/javascript">
+var Video1 = "http://www.youtube.com/embed/lMwexSUd460?autoplay=1&wmode=opaque&rel=0&showinfo=0&enablejsapi=1";
+var Video2 = "http://www.youtube.com/embed/PEjdzBz5D9I?autoplay=1&wmode=opaque&rel=0&showinfo=0&enablejsapi=1";
+var Video3 = "http://www.youtube.com/embed/OZYzdxXiUyA?autoplay=1&wmode=opaque&rel=0&showinfo=0&enablejsapi=1";
+
+function showPlayer() {
+    $('#player').css('visibility', 'visible');
+	//$('#player').css('display', 'block');
+}
+    
+$(document).ready(function(e) {
+	
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+	  IE = true;
+  }
+  
+  iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
+
+ //alert(screen.width);
+ if (screen.width < 768) 
+ { 
+  window.location.href = window.location.href + "mobile/index.html"; 
+ }
+ 
+ 
+ $(".Video1").hide();
+ 
+ $(".videolink").click(function(){
+  $(".play").hide();
+  removesparkle();
+  if(iOS || IE)
+	{
+		playspecial(Video1);
+	}
+	else
+	{
+		videoplayer.loadVideoById(videoIds[2]);
+	}
+  
+ });
+ 
+ $(".menulink .thumb_holder1a").click(function(){
+  $(".videolink .play").hide();
+  	removesparkle();
+	if(iOS || IE)
+	{
+		playspecial(Video1);
+	}
+	else
+	{
+		videoplayer.loadVideoById(videoIds[0]);
+	}
+  	 
+
+	 
+     
+ });
+    
+ $(".menulink .thumb_holder2a").click(function(){
+  $(".videolink .play").hide();
+  	removesparkle();
+	if(iOS || IE)
+	{
+		playspecial(Video2);
+	}
+	else
+	{
+      videoplayer.loadVideoById(videoIds[1]);
+	}
+     
+ });
+    
+ $(".menulink .thumb_holder3a").click(function(){
+  $(".videolink .play").hide();
+  	removesparkle();
+	if(iOS || IE)
+	{
+		playspecial(Video3);
+	}
+	else
+	{
+		videoplayer.loadVideoById(videoIds[2]);
+	}
+     
+     
+ });
+ $('.vid_holder').mouseenter()
+ {
+	 OnMouseIn();
+ }
+ 
+ $('.play').mouseleave()
+ {
+	 OnMouseOut();
+ }
+ $(".girls_on_set").click(function(){
+	$(".girls_on_set_big").fadeIn(500);
+	$(".filter").fadeIn(500); 
+ });
+ $(".girls_on_set_big_x").click(function(){
+ 	$(".girls_on_set_big").fadeOut(500);
+	$(".filter").fadeOut(500); 
+ });
+ 
+ 
+ $(".filter").css({'height':($(document).height()*1+'px')});
+
+ 
+ 
+ /*tryout area*/
+});
+
+function removesparkle(){
+	$(".playspark").remove();
+	showPlayer();
+    var a = document.getElementsByClassName('videolink')[0];
+
+	a.onmouseover = null;
+    a.onmouseout = null;
+
+	try {
+	
+
+	videoplayer.playVideo();
+	}
+	catch(ex)
+	{
+		videoplayer.loadVideoById(videoIds[0]);
+		console.log(ex.message);
+	}
+}
+
+function playspecial(video)
+{
+
+		$("#player").css("display", "none");
+		$("#iosplayer").css("display", "block");
+		$("#iosplayer iframe").attr("src", video);
+	
+}
+
+</script>
+
+<script type="text/javascript">			
+	var imageWidth=1250, 
+	imageHeight=1500, 
+	xpos=0, 
+	ypos=0, 
+	index=0, 
+	numFrames = 30, 
+	frameSize= 250, 
+	div; 
+
+
+	function init() {
+		div = document.getElementById('playspark');
+	
+		//loop!
+		handleanim = setInterval(play, 1000 / 18);
+	}
+					
+
+	function play() {
+		//multiplying by -1 because we want to move the image to the left and up to reveal the area we want to see.
+		div.style.backgroundPosition = (-xpos)+"px "+(-ypos)+"px";
+	
+		//each time around we add the frame size to our xpos, moving along the source image.
+		xpos += frameSize;
+		//increase the index so we know which frame of our animation we are currently on.
+		index += 1;
+		
+		//if our index is higher than our total number of frames, we're at the end and better start over.
+		if (index >= numFrames) {
+			clearInterval(handleanim);
+			xpos =0;
+			ypos =0;
+			index=0;
+		//if we've gotten to the limit of our source image's width, we need to move down one row of frames.							
+		} else if (xpos + frameSize > imageWidth){
+			xpos =0;
+			ypos += frameSize;
+		}
+		
+		
+	}
+	
+	function OnMouseIn () {
+		$("#playspark").stop().fadeIn(100);
+		init();
+	}
+	
+	function OnMouseOut () {
+		$("#playspark").stop().fadeOut(100);
+		clearInterval(handleanim);
+	}
+
+</script>
+
+</head>
+
+<body>
+	<div class="bodywrapper">
+	<div class="content">
+    
+    
+
+    	<div class="logo"></div>
+        <a href="#">
+        <div class="girls_on_set_wrapper">
+          <div class="girls_on_set">
+                <div class="girls_on_set_zoom"></div>
+          </div>
+        </div>
+		</a>
+    	<div class="thumbs">
+        <div class="thumbs_diamond_top"></div>
+        <div class="thumbs_diamond_bot"></div>
+        <div class="thumb_holder2"></div>
+        	<a href="#" class="menulink">
+            	<div class="thumb_holder1"></div>
+                <div class="thumb_holder1a fade"><p class="thumbs_title">Magic Mirror App</p><p class="thumbs_txt">Unlock hidden surprises throughout the Ultimate Dream Castle!</p><div class="thumbs_play_btn"></div></div>
+            </a>
+            <a href="#" class="menulink">
+                <div class="thumb_holder2"></div>
+                <div class="thumb_holder2a fade"><p class="thumbs_title">Full Castle</p><p class="thumbs_txt">The All-new Ultimate Dream Castle!</p><div class="thumbs_play_btn"></div></div>
+            </a>
+            <a href="#" class="menulink">
+	            <div class="thumb_holder3"></div>
+                <div class="thumb_holder3a fade"><p class="thumbs_title">Hair Elevator</p><p class="thumbs_txt">Rapunzel’s long, blonde hair becomes a spiraling elevator!</p><div class="thumbs_play_btn"></div></div>
+            </a>
+   	  </div>
+        <div class="ladies"></div>
+         <div class="matell"></div>
+            <div class="video_container">
+            <div class="video_bar_left"></div>
+            <div class="video_bar_right"></div>
+				<a href="#" class="videolink" onmouseover="OnMouseIn ()" onmouseout="OnMouseOut ()">            
+                <div class="vid_holder">
+                	<div id="player"></div>
+                    <div id="iosplayer"><iframe width="740" height="440" src="" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+                <div class="playspark" id="playspark"></div>
+                <div class="play" onmouseout="OnMouseOut ()"></div>
+                <div class="video"></div>
+            </a>
+            </div>
+        <!--BODY TEXT WAS HERE!-->
+		<div class="body_txt"></div>
+    
+    
+    </div>
+	<div class="footer">
+    	<div class="footer_txt">Disney Princess elements: © Disney<span>|</span><span>©2013 Mattel.  All Rights Reserved.</span></div></div>
+<div class="filter"></div>
+    <div class="girls_on_set_big">
+    	<a href="#"><div class="girls_on_set_big_x"></div></a>
+</div>
+</div>
+</body>
+</html>

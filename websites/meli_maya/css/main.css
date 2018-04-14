@@ -1,0 +1,1439 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	-webkit-font-smoothing:antialiased;
+	margin: 0;
+	padding: 0;
+	background-color: #ffdb00;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*===========================================================================
+	FONTS
+============================================================================= */
+@font-face {
+    font-family: 'coopblackregular';
+    src: url('coopblack-webfont.eot');
+    src: url('coopblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('coopblack-webfont.woff') format('woff'),
+         url('coopblack-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blue_highwaybold';
+    src: url('blue_highway_bd-webfont.eot');
+    src: url('blue_highway_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blue_highway_bd-webfont.woff') format('woff'),
+         url('blue_highway_bd-webfont.ttf') format('truetype'),
+         url('blue_highway_bd-webfont.svg#blue_highwaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blue_highwayregular';
+    src: url('blue_highway_rg-webfont.eot');
+    src: url('blue_highway_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blue_highway_rg-webfont.woff') format('woff'),
+         url('blue_highway_rg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*============================================================================
+   CSS RESET
+   
+   /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+   
+   
+   
+   
+/*=========================================================================== */
+body {
+	/*background-position: top center;
+	background-image: url(../img/meli_maya_bg.jpg);
+	background-repeat: repeat-x;
+	width: 1920px;*/
+}
+.wrapper {
+	background-position: top center;
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	/*width: 1920px;*/
+	width: inherit;
+	height: 1052px;
+	overflow:hidden;
+}
+.head_cont {
+	width: 960px;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 7;
+}
+.background_static {
+	background: url(../img/meli_maya_bg_static.jpg);
+	background-repeat: no-repeat;
+	top: 823px;
+	position: absolute;
+	padding: 0;
+	margin: 0 auto;
+	width: auto;
+	height: 229px;
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+	z-index: 5;
+}
+/*.carousel {
+	position: absolute;
+	top:0px;
+	display: block;
+	width: 20000px;
+	height: 824px;
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;	
+}
+.carousel_content {
+	width: 960px;
+	height: 824px;
+	display: inline-block;
+	margin-right: 860px;
+	float: left;
+}*/
+.content {
+	background-position: center top;
+	position: relative;
+	height: 824px;;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+	top: 0px;
+	margin-top: -15px;
+	/*left: 50%;
+	margin-left: -480px;*/
+}
+#home{
+	background-position: center top;
+	position: relative;
+	height: 824px;;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+	top: 0px;
+	margin-top: /*-15px;*/
+}
+#spaarkaart{
+	background-position: center top;
+	position: relative;
+	height: 824px;;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+	top: 0px;
+	margin-top: -15px;	
+}
+#products{
+	background-position: center top;
+	position: relative;
+	height: 824px;;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+	top: 0px;
+	margin-top: -15px;	
+}
+#reglement{
+	background-position: center top;
+	position: relative;
+	height: 824px;;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+	top: 0px;
+	margin-top: -15px;
+}
+.logo {
+	background-image: url(../img/logo.png);
+	top: 0px;
+	margin-top: -50px;
+	height: 256px;
+	width: 266px;
+	left: 0px;
+	margin-left: -44px;
+	z-index: 5;
+	position: absolute;
+   transition: background .5s ease-in-out;
+   -moz-transition: background .5s ease-in-out;
+   -webkit-transition: background .5s ease-in-out;
+}
+.logo:hover {
+	background-image: url(../img/logo_rollover.png);
+}
+.menu_links {
+	top: 106px;
+	left: 234px;
+	position: absolute;
+	display: block;	
+	width: 600px;
+	height: 30px;
+	overflow: hidden;
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	margin-before: 0px;
+	margin-after: 0px;
+	margin-start: 0px;
+	margin-end: 0px;
+	padding-start: 0px;
+	z-index:5;
+}
+.menu_links li {
+	display: inline-block;
+}
+.menu_btn_1 {
+	background-image: url(../img/spaarkaart_btn.png);
+	height: 30px;
+	width: 133px;
+	float: left;
+}
+.menu_btn_2 {
+	background-image: url(../img/producten_btn.png);
+	height: 30px;
+	width: 125px;
+	float: left;
+	margin-left: 20px;
+}
+.menu_btn_3 {
+	background-image: url(../img/reglement_btn.png);
+	height: 30px;
+	width: 122px;
+	float: left;
+	margin-left: 30px;
+}
+.menu_btn_1:hover , .menu_btn_2:hover , .menu_btn_3:hover {
+	background-position: bottom !important;
+}
+.fb_btn{
+	width: 30px;
+	height: 30px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../img/facebook_btn_30.png);	
+	display:inline-block;
+	z-index: 5;
+	margin: 0 auto;
+	margin-left: 35px;
+}
+.fb_btn:hover{
+	background-position: bottom;
+}
+.poster {
+	background-image: url(../img/deurposter.png);
+	height: 57px;
+	width: 535px;
+	top: 35px;
+	left: 3px;
+	position: absolute;	
+}
+.maya_txt_only {
+	background-image: url(../img/maya_txt_only.png);
+	height: 34px;
+	width: 83px;
+	top: 0px;
+	left: 278px;
+	position: absolute;	
+}
+.text_home {
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 26px;
+	letter-spacing: 0px;
+	top: 4px;
+	left: 3px;
+	color: #f80008;
+	width: 500px;
+}
+.maya_home {
+	top: 37px;
+	left: 623px;
+	position: absolute;
+	display: block;
+	width: 425px;
+	height: 671px;
+	background-image: url(../img/meli_maya_home.png);
+}
+.maya_home_blink{
+	height: 72px;
+	width: 98px;
+	top: 216px;
+	left: 130px;
+	position: absolute;
+	background-image:url(../img/maya_home_blink.png);
+	visibility: hidden;
+}
+.maya_poster_container {
+	position: absolute;
+	width: 604px;
+	height: 660px;
+	top: 165px;
+	left: 0px;
+	margin-left: -30px;
+	overflow: hidden;
+}
+.maya_1 {
+	background-image: url(../img/maya_1.png);
+	width: 330px;
+	height: 620px;
+	left: 0px;
+	top: 159px;
+	position: absolute;
+	transition: top 0.4s ease-in-out;
+	-webkit-transition: top 0.4s ease-in-out;
+	-moz-transition: top 0.4s ease-in-out;
+	-o-transition: top 0.4s ease-in-out;
+	cursor: pointer;
+}
+.maya_1:hover{
+	top:129px;
+}
+.maya_2 {
+	background-image: url(../img/maya_2.png);
+	width: 235px;
+	height: 588px;
+	left: 180px;
+	top: 150px;
+	position: absolute;
+	transition: top 0.4s ease-in-out;
+	-webkit-transition: top 0.4s ease-in-out;
+	-moz-transition: top 0.4s ease-in-out;
+	-o-transition: top 0.4s ease-in-out;
+	cursor: pointer;
+}
+.maya_2:hover{
+	top: 125px;	
+}
+.maya_3 {
+	background-image: url(../img/maya_3.png);
+	width: 326px;
+	height: 618px;
+	right: 0px;
+	top: 159px;
+	position: absolute;
+	transition: top 0.4s ease-in-out;
+	-webkit-transition: top 0.4s ease-in-out;
+	-moz-transition: top 0.4s ease-in-out;
+	-o-transition: top 0.4s ease-in-out;
+	cursor: pointer;
+}
+.maya_3:hover{
+	top:129px;	
+}
+.maya_honey {
+	background-image: url(../img/maya_honey.png);
+	left: 0px;
+	margin-left: 65px;
+	top: 0px;
+	margin-top: 52px;
+	width: 159px;
+	height: 239px;
+	position: absolute;
+	z-index: 7;
+}
+.maya_choco {
+	background-image: url(../img/maya_choco.png);
+	top: 0px;
+	left: 0px;
+	margin-left: 3px;
+	width: 165px;
+	height: 267px;
+	position: absolute;
+	z-index: 6;
+}
+.maya_ontdek {
+	background-image: url(../img/ontdek.jpg);
+	position: absolute;
+	width: 154px;
+	height: 21px;
+	top: 150px;
+	left: 200px;
+}
+.maya_choco_honey {
+	top: 175px;
+	left: 200px;
+	width: 240px !important;
+	height: 150px !important;
+	position: absolute;	
+	list-style:none;
+}
+.maya_choco_honey > li {
+	cursor: pointer;
+	font-family: blue_highwaybold;
+	font-size: 20px;
+	font-style: italic;
+	color: #f80009;
+	width: 240px !important;
+	height: 21px !important;
+	margin-top: 0px !important;
+}
+.maya_choco_honey > li span {
+	font-style: normal;
+}
+.maya_choco_honey li:hover {
+	color: #FFFFFF;
+}
+.maya_choco_honey li:hover span{
+	color: #f80009;
+}
+.maya_ontdek_fr {
+	background-image: url(../img/ontdek_fr.jpg);
+	position: absolute;
+	width: 212px;
+	height: 21px;
+	top: 150px;
+	left: 200px;
+}
+.maya_choco_honey_fr {
+	top: 175px;
+	left: 200px;
+	width: 240px !important;
+	height: 150px !important;
+	position: absolute;	
+	list-style:none;
+}
+.maya_choco_honey_fr > li {
+	cursor: pointer;
+	font-family: blue_highwaybold;
+	font-size: 20px;
+	font-style: italic;
+	color: #f80009;
+	width: 240px !important;
+	height: 21px !important;
+	margin-top: 0px !important;
+}
+.maya_choco_honey_fr > li span {
+	font-style: normal;
+}
+.maya_choco_honey_fr li:hover {
+	color: #FFFFFF;
+}
+.maya_choco_honey_fr li:hover span{
+	color: #f80009;
+}
+
+.element_2_cont {
+	position: absolute;
+	width: 430px;
+	height: 290px;
+	top: 577px;
+	left: 620px;
+}
+.maya_logo {
+	background-image: url(../img/maya_logo.png);
+	height: 55px;
+	width: 72px;
+	top: 810px;
+	left: 40px;
+	position: absolute;
+	z-index: 5;
+}
+.studio100_logo {
+	background-image: url(../img/studio100_logo.png);
+	height: 24px;
+	width: 111px;
+	top: 833px;
+	left: 132px;
+	position: absolute;
+	z-index: 5;
+}
+.legal_line {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #e87900;
+	position: absolute;
+	width: 356px;
+	height: auto;
+	top: 838px;
+	left: 268px;
+	letter-spacing: 0.5px;
+	line-height: 110%;
+	z-index: 5;
+}
+.legal_line a{
+	text-decoration: none;
+	color: #e87900;
+}
+.legal_line a:hover{
+	color: 	#C66800;
+}
+.foreground {
+	display: block;
+}
+/*===========================================================================
+					SPAARKAART
+============================================================================= */
+.maya_slider {
+	position: absolute;
+	height: 581px;
+	width: 278px;
+	top: 195px;
+	left: 0px;
+	margin-left: -7px;
+	background-image: url(../img/maya_slider.png);	
+}
+.maya_poster_1 {
+	position: absolute;
+	height: 552px;
+	width: 200px;
+	top: 29px;
+	left: 39px;
+	background-image: url(../img/poster_1.png);
+	display: block;
+}
+.maya_poster_2 {
+	position: absolute;
+	height: 552px;
+	width: 200px;
+	top: 29px;
+	left: 39px;
+	background-image: url(../img/poster_2.png);
+	display: none;	
+}
+.maya_poster_3 {
+	position: absolute;
+	height: 552px;
+	width: 200px;
+	top: 29px;
+	left: 39px;
+	background-image: url(../img/poster_3.png);
+	display: none;	
+}
+.maya_slider_previous {
+	position: absolute;
+	height: 56px;
+	width: 56px;
+	top: 253px;
+	left: 0px;
+	margin-left: -28px;
+	background-image: url(../img/maya_slider_previous.png);
+	cursor: pointer;
+}
+.maya_slider_previous:hover {
+	background-position: bottom;	
+}
+.maya_slider_next {
+	position: absolute;
+	height: 56px;
+	width: 56px;
+	top: 253px;
+	right: 0px;
+	margin-right: -28px;
+	background-image: url(../img/maya_slider_next.png);
+	cursor: pointer;
+}
+.maya_slider_next:hover {
+	background-position: bottom;
+}
+.deurposter_spaarkaart {
+	height: 81px;
+	width: 436px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left: -50px;
+	background-image: url(../img/deurposter_spaarkaart.png);
+}
+.spaarkaart_elem_container {
+	position: absolute;
+	width: 336px;
+	height: 430px;
+	top: 217px;
+	left: 339px;	
+}
+.maya_spaarkaart_txt {
+	width: 310px;
+	margin: 0px;
+	padding: 0px;
+	font-family: blue_highwaybold;
+	font-size: 19px;
+	text-decoration: none;
+	line-height: 140%;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	margin-left: -10px;
+	color: #ff0000;
+}
+/*.maya_spaarkaart_txt span {
+	font-style: italic;
+}*/
+.u {    
+    border-bottom: 1px dashed #ff0000;
+    text-decoration: none;
+	font-style: italic;
+}
+.maya_spaarkaart_txt a {
+	text-decoration: none;
+	color: #ff0000;
+}
+.maya_spaarkaart_txt a:hover .u{
+    border-bottom: 1px dashed #ffffff;
+    text-decoration: none;
+	font-style: italic;
+	color: #ffffff;
+}
+.download_spaarkaart {
+	background-image: url(../img/download_spaarkaart.jpg);
+	position: absolute;
+	height: 36px;
+	width: 336px;
+	top: 410px;
+	left: 0px;
+	margin-left: -10px;
+}
+.download_spaarkaart:hover {
+	background-position: bottom;	
+}
+.maya_spaarkaart_pic {
+	height: 674px;
+	width: 394px;
+	position: absolute;
+	top: 88px;
+	left: 680px;
+	background-image: url(../img/maya_spaarkaart.png);
+}
+.maya_spaarkaart_blink {
+	width: 112px;
+	height: 55px;
+	top: 207px;
+	left: 163px;
+	position: absolute;
+	background-image: url(../img/maya_spaarkaart_blink.png);
+}
+/* ==========================================================================
+				PRODUCTS
+============================================================================= */
+.meli_maya_logos {
+	position: absolute;
+	height: 54px;
+	width: 166px;
+	top: 240px;
+	left: 357px;
+	background-image: url(../img/meli_maya_logos.png); 
+}
+.product_text_container {
+	position: absolute;
+	width: 330px;
+	height: 550px;
+	top: 300px;
+	left: 315px;
+	margin-left: 0px;
+}
+.product_honing {
+	top: 0px;
+	left: 5px;
+	width: 277px;
+	height: 46px;
+	position: absolute;
+	background-image: url(../img/product_honing.png);
+}
+.product_miel {
+	top: 0px;
+	left: 60px;
+	width: 162px;
+	height: 45px;
+	position: absolute;
+	background-image: url(../img/product_miel.png)
+}
+.product_text_honing, .product_text_honing_fr {
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 16px;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 130%;
+	letter-spacing: 0px;
+	margin-top: 120px;
+}
+.product_choco {
+	top: 0px;
+	left: 5px;
+	width: 257px;
+	height: 91px;
+	position: absolute;
+	background-image: url(../img/product_choco.png);
+}
+.product_text_choco, product_text_choco_fr {
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 16px;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 130%;
+	letter-spacing: 0px;
+	margin-top: 120px;
+}
+.product_container {
+	width: 330px;
+	height: 588px;
+	overflow: visible;
+	position: absolute;
+	top: 196px;
+	left: 0px;
+	margin-left: -36px;
+}
+.product_container_circle {
+	background-image: url(../img/product_container_circle.png);
+	width: 278px;
+	height: 277px;
+	top: 145px;
+	left: 28px;
+	position: absolute;
+	z-index: 0;	
+}
+.product_slider_next {
+	cursor: pointer;
+	position: absolute;
+	height: 56px;
+	width: 56px;
+	top: 50%;
+	margin-top: -27px;
+	right: 0px;
+	margin-right: -8px;
+	background-image: url(../img/maya_slider_next.png);
+	z-index:5;
+}
+
+.product_slider_next:hover, .product_slider_previous:hover {
+	background-position: bottom;	
+}
+.product_slider_previous {
+	cursor: pointer;
+	position: absolute;
+	height: 56px;
+	width: 56px;
+	top: 50%;
+	margin-top: -27px;
+	left: 0px;
+	margin-left: -4px;
+	background-image: url(../img/maya_slider_previous.png);
+	z-index:5;
+}
+.choco_bottle {
+	width: 405px;
+	height: 732px;
+	top: 0px;
+	right: 25px;
+	margin-top: -110px;
+	position: absolute;
+	background-image: url(../img/product_choco_bottle.png);
+	display: block;
+	pointer-events: none;
+	z-index: 3;
+}
+.honney_bottle {
+	width: 404px;
+	height: 636px;
+	top: 0px;
+	right: 27px;
+	margin-top: -50px;
+	position: absolute;
+	background-image: url(../img/product_honing_bottle.png);
+	display: block;
+	pointer-events: none;
+	z-index: 3;
+}
+.maya_bee_products {
+	height: 627px;
+	width: 394px;
+	top: 134px;
+	left: 640px;
+	position: absolute;
+	background-image: url(../img/maya_products.png);
+}
+.maya_bee_products_blink {
+	height: 55px;
+	width: 111px;
+	top: 208px;
+	left: 127px;
+	position: absolute;
+	background-image: url(../img/maya_products_blink.png);	
+}
+.choco {
+	display:none;
+}
+.honney {
+	display:block;
+}
+.glow{
+	height: 1043px;
+	width:1134px ;
+	top: 0px;
+	left: opx;
+	background-image:url(../img/glow.png);
+	margin-top: -227px;
+	margin-left: -402px;
+	position: absolute;	
+	display: none;
+	z-index: 1;
+	pointer-events:none;
+}
+/* ==========================================================================
+					REGLEMENT
+============================================================================= */
+.reglement_title {
+	height: 46px;
+	width: 400px;
+	position: absolute;
+	top: 198px;
+	left: 1px;
+	background-image: url(../img/reglement_title.png);
+}
+.maya_reglement {
+	position: absolute;
+	height: 608px;
+	width: 496px;
+	top: 150px;
+	left: 565px;
+	background-image: url(../img/maya_reglement.png);
+}
+.maya_reglement_blink {
+	height: 62px;
+	width: 91px;
+	top: 166px;
+	left: 167px;
+	position: absolute;
+	background-image: url(../img/maya_reglement_blink.png);	
+}
+.scroll_box_nl {
+	width: 590px;
+	height: 460px;
+	position: absolute;
+	top: 272px;
+	left: 1px;
+	border: none;
+	overflow: hidden;
+	overflow-x: hidden;
+	font-family: blue_highwayregular;
+	font-size: 16px;
+	text-decoration: none;
+	color: #ff0000;
+	line-height: 130%;
+	letter-spacing: 0px;
+}
+.scroll_box_nl article {
+	font-weight:bolder;
+}
+.scroll_box_nl headline {
+	font-weight:bolder;
+	font-size: 20px;
+}
+.scroll_box_nl span {
+	font-weight:bolder;	
+}
+.scroll_box_fr {
+	width: 590px;
+	height: 460px;
+	position: absolute;
+	top: 272px;
+	left: 1px;
+	border: none;
+	overflow: hidden;
+	overflow-x: hidden;
+	font-family: blue_highwayregular;
+	font-size: 16px;
+	text-decoration: none;
+	color: #ff0000;
+	line-height: 130%;
+	letter-spacing: 0px;
+	display: none;
+}
+.scroll_box_fr article{
+	font-weight:bolder;
+}
+.scroll_box_fr headline {
+	font-weight:bolder;
+	font-size: 20px;
+}
+.scroll_box_fr span {
+	font-weight:bolder;	
+}
+/*===========================================================================
+   LANGUAGE SWITCH
+============================================================================= */
+.lang_fr {
+	position: absolute;
+	top: 20px;
+	font-family: blue_highwayregular;
+	color: #FF0000;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 4;
+	right: 100px;
+}
+.lang_nl {
+	position: absolute;
+	top: 20px;
+	font-family: blue_highwayregular;
+	color: #FF0000;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 4;
+	right: 124px;
+}
+.lang_fr:hover, .lang_nl:hover {
+	text-decoration: underline;
+	color: #790000;
+}
+.lang_active {
+	text-decoration: underline;
+	color: #790000;	
+}
+.line {
+	position: absolute;
+	top: 20px;
+	font-family: blue_highwayregular;
+	color: #FF0000;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 4;
+	right: 118px;
+}
+/* ==========================================================================
+   FRENCH
+============================================================================= */
+.menu_btn_1_fr {
+	background-image: url(../img/spaarkaart_btn_fr.png);
+	height: 30px;
+	width: 150px;
+	float: left;
+	display: block;
+}
+.menu_btn_2_fr {
+	background-image: url(../img/producten_btn_fr.png);
+	height: 30px;
+	width: 110px;
+	float: left;
+	margin-left: 40px;
+	display: block;
+}
+.menu_btn_3_fr{
+	background-image: url(../img/reglement_btn.png);
+	height: 30px;
+	width: 122px;
+	float: left;
+	margin-left: 35px;
+}
+.menu_btn_1_fr:hover, .menu_btn_2_fr:hover, .menu_btn_3_fr:hover{
+	background-position: bottom !important;
+}
+.poster_fr{
+	background-image: url(../img/poster_fr.png);
+	height: 49px;
+	width: 724px;
+	top: 35px;
+	left: 3px;
+	position: absolute;
+	display: block;
+}
+.maya_fr{
+	background-image: url(../img/maya_txt_only.png);
+	height: 34px;
+	width: 83px;
+	top: 0px;
+	left: 440px;;
+	position: absolute;
+	display: block;	
+}
+.text_home_fr{
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 26px;
+	letter-spacing: 0px;
+	top: 4px;
+	left: 3px;
+	color: #f80008;
+	width: 500px;
+	display: block;
+}
+/*============================== SPAARKAART PAGE ============================ */
+.deurposter_spaarkaart_fr{
+	height: 131px;
+	width: 490px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left: -60px;
+	background-image: url(../img/deurposter_spaarkaart_fr.png);
+}
+.maya_spaarkaart_txt_fr{
+	width: 310px;
+	margin: 0px;
+	padding: 0px;
+	font-family: blue_highwaybold;
+	font-size: 19px;
+	text-decoration: none;
+	line-height: 140%;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	margin-left: -10px;
+	color: #ff0000;
+}
+/*.maya_spaarkaart_txt span {
+	font-style: italic;
+}*/
+.u {    
+    border-bottom: 1px dashed #ff0000;
+    text-decoration: none;
+	font-style: italic;
+}
+.maya_spaarkaart_txt_fr a {
+	text-decoration: none;
+	color: #ff0000;
+}
+.maya_spaarkaart_txt_fr a:hover .u{
+    border-bottom: 1px dashed #ffffff;
+    text-decoration: none;
+	font-style: italic;
+	color: #ffffff;
+}
+.download_carte_epargne{
+	background-image: url(../img/download_spaarkaart_fr.jpg);
+	position: absolute;
+	height: 36px;
+	width: 336px;
+	top: 410px;
+	left: 0px;
+	margin-left: -10px;
+}
+.download_spaarkaart_fr:hover {
+	background-position: bottom;	
+}
+/*======================= PRODUCT PAGE FR =================================== */
+.product_text_honing_fr.fr{		
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 16px;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 130%;
+	letter-spacing: 0px;
+	margin-top: 120px;
+}
+.product_text_choco_fr.fr {
+	position: absolute;
+	font-family: blue_highwaybold;
+	font-size: 16px;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 130%;
+	letter-spacing: 0px;
+	margin-top: 120px;
+}
+/*======================== MAIN PAGE POSTER ================================= */
+.maya_poster_fr{
+	background-image: url(../img/maya_poster_fr.png);
+	height: 120px;
+	width: 474px;
+	top: 0px;
+	margin-top: 0px;
+	left: 3px;
+	position: absolute;
+	display: none;
+	z-index: 6;
+}
+.maya_poster_nl{
+	background-image: url(../img/maya_poster_nl.png);	
+	height: 93px;
+	width: 535px;
+	top: 0px;
+	margin-top: 0px;
+	left: 3px;
+	position: absolute;
+	display: block;
+	z-index: 6;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+	.elem1{
+		margin-left: -5px;
+	}
+	.elem2{
+		margin-left: 10px;	
+	}
+	.elem3{
+		margin-left: -30px;
+	}
+	.product_container{
+		margin-left:-15px;	
+	}
+	.reglement_title{
+		margin-left: -15px;	
+	}
+	.maya_slider{
+		margin-left:20px;	
+	}
+	.scroll_box_nl{
+	 margin-left: -15px;	
+	}
+	.scroll_box_fr{
+	margin-left: -15px;	
+	}
+	.element_2_cont{
+		margin-left: 0px;
+		left: 570px;
+	}
+	.maya_choco_honey > li {
+		cursor: pointer;
+		font-family: blue_highwaybold;
+		font-size: 17px;
+		font-style: italic;
+		color: #f80009;
+		width: 240px !important;
+		height: 21px !important;
+		margin-top: 0px !important;
+		line-height: 110%;
+	}
+	.maya_choco_honey_fr > li {
+		cursor: pointer;
+		font-family: blue_highwaybold;
+		font-size: 17px;
+		font-style: italic;
+		color: #f80009;
+		width: 240px !important;
+		height: 21px !important;
+		margin-top: 0px !important;
+		line-height: 110%;
+	}
+	/*.maya_home, .maya_spaarkaart_pic, .maya_bee_products, .maya_reglement {
+		transform:scale(0.8);
+		-webkit-transform:scale(0.8);
+		-moz-transform:scale(0.8);
+	}*/
+	.maya_home {
+		left: 635px;
+	}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.elem1{
+		margin-left: -5px;
+	}
+	.elem2{
+		margin-left: 10px;	
+	}
+	.elem3{
+		margin-left: -30px;
+	}
+	.product_container{
+		margin-left:-15px;	
+	}
+	.reglement_title{
+		margin-left: -15px;	
+	}
+	.maya_slider{
+		margin-left:20px;	
+	}
+	.scroll_box_fr{
+	 margin-left: -15px;	
+	}
+	.scroll_box_nl{
+	 margin-left: -15px;	
+	}
+	.element_2_cont{
+		margin-left: 0px;
+		left: 570px;
+	}
+	.maya_choco_honey > li {
+		cursor: pointer;
+		font-family: blue_highwaybold;
+		font-size: 17px;
+		font-style: italic;
+		color: #f80009;
+		width: 240px !important;
+		height: 21px !important;
+		margin-top: 0px !important;
+		line-height: 110%;
+	}
+	.maya_choco_honey_fr > li {
+		cursor: pointer;
+		font-family: blue_highwaybold;
+		font-size: 17px;
+		font-style: italic;
+		color: #f80009;
+		width: 240px !important;
+		height: 21px !important;
+		margin-top: 0px !important;
+		line-height: 110%;
+	}
+	/*.maya_home, .maya_spaarkaart_pic, .maya_bee_products, .maya_reglement {
+		transform:scale(0.8);
+		-webkit-transform:scale(0.8);
+		-moz-transform:scale(0.8);
+	}*/
+	.maya_home {
+		left: 635px;
+	}
+	
+}
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

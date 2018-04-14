@@ -1,0 +1,60 @@
+/* CSS Document */
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: #d80e80;
+}
+
+.body_wrapper {
+	background-position: top center;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+}
+
+.energic_logo {
+	position: absolute;
+	width: 514px;
+	height: 140px;
+	top: 360px;
+	left: 50%;
+	margin-left: -257px;
+	background: url(../images/energic_logo.png);
+}
+
+.energic_contact {
+	position: absolute;
+	width: 270px;
+	height: 45px;
+	top: 563px;
+	left: 50%;
+	margin-left: -135px;
+	background: url(../images/email.png);
+}
+
+.fb_btn, .fb_btn:hover {
+	position: absolute;
+	width: 233px;
+	height: 44px;
+	top: 754px;
+	left: 50%;
+	margin-left: -116px;
+	background: url(../images/fb.png);
+}
+
+.fb_btn:hover {
+	width: 271px;
+	height: 82px;
+	top: 733px;
+	left: 50%;
+	margin-left: -136px;
+	background: url(../images/fb_hover.png);
+}

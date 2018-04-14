@@ -1,0 +1,310 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Inconsolata', monospace;
+}
+.no-margin {
+	margin: 0px;
+}
+.no-padding {
+	padding: 0px;
+}
+
+/* ==========================================================================
+	NAVBAR CSS
+========================================================================== */
+
+.navbar.navbar-default{
+	margin-bottom: 0px;
+}
+.nav.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+.navbar-nav li {
+	border-right: 1px solid black;
+}
+.navbar-nav li:last-child {
+	border: none;
+}
+.navbar-collapse span {
+	float: right;
+	line-height: 50px;
+}
+.navbar-nav>li>a {
+	padding: 15px 5px;
+}
+#bs-example-navbar-collapse-1 {
+	width: 100%;
+}
+@media (max-width:767px) {
+	.navbar-toggle.pull-left {
+		margin-left: 10px;
+		float: right !important;
+	}
+}
+.menu .col-sm-2, .menu .col-xs-2{
+ 	padding-right:0px !important;
+ }  
+ .menu .col-sm-10, .menu .col-xs-10{
+ 	padding-left:0px !important;
+ }
+.row .well{
+	height: 105px;
+  	margin: 0;
+  	text-align: center;
+}
+.top_link{
+	padding: 15px;
+}
+#myInput {
+	margin: 12px auto;
+	display: block;
+	width: 80%;
+	border-radius: 10px;
+	border-style: solid;
+	padding-left: 10px;
+	margin-left: 40px;
+}
+.text-center {
+	text-align: center;
+	line-height: 50px;
+}
+.text-center a {
+		float: right;
+		
+}
+.text-center a:first-child {
+	padding-left: 10px;
+}
+
+.navbar.navbar-default {
+	border: none;
+	background-color: white;
+	background-image: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.row .well {
+	border: none;
+	background-color: #f4f4f4;
+	background-image: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    height: 101px;
+}
+.location-menu {
+	list-style: none;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+.location-menu li {
+	display: inline-block;
+}
+.location-menu .active {
+	color: black;
+	font-weight: bold;
+}
+.brand-image {
+	max-width: 200px;
+}
+.padding-15px {
+	padding: 0px 15px;
+}
+.brand-name {
+	display: block;
+    margin: 60px 0 0 0;
+    font-size: 28px;
+}
+.row > p {
+	margin-top: 30px;
+	font-size: 18px;
+}
+.left-side-menu {
+	max-width: 250px;
+	height: auto;
+	min-height: 300px;
+	background-color: white;
+	margin-top: 30px;
+
+}
+.brand-title,
+.brand-terrain,
+.brand-select,
+.brand-use,
+.brand-material {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 0;
+	background-color: #f4f4f4;
+
+}
+.brand-select {
+	background-color: white;
+	color: #006872;
+}
+.brand-select a {
+	color: #006872;
+}
+.brand-terrain,
+.brand-use,
+.brand-material {
+	border-top: none;
+}
+.brand-select {
+	border-top: none;
+	min-height: 50px;
+}
+/* FLOAT A TAG SPACE FIX */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+  *zoom: 1;
+}
+.brand-select a {
+	float: right;
+}
+.product-image {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	margin-top: 30px;
+	border: 1px solid black;
+}
+/* SIGNUP SECTION */
+.signup-section {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#signup {
+	display: inline-block;
+	margin: 10px auto;
+	width: 40%;
+	padding-left: 10px;
+}
+.submit {
+	width: 80px;
+	height: 26px;
+	background-color: white;
+	border: 1px solid black;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#000000)";/*IE 8*/
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);/*FF 3.5+*/
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
+	transition: all 0.1s ease-in-out;
+}
+.submit:hover {
+	-ms-filter: none;/*IE 8*/
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+	filter: none; /*IE 5.5-7*/
+}
+.bottom-well {
+	height: auto;
+	min-height: 110px;
+}
+dt {
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+dd {
+	margin-top: 10px;
+}
+dl ul {
+	list-style: none;
+	padding: 0px;
+}
+dl ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+footer p {
+	text-align: center;
+	margin: 0;
+}
+footer {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 10px;
+}
+.fa-facebook-square {
+	color: #3b5998;
+}
+.fa-facebook-square:hover {
+	color: #293e6a;
+}
+.fa-twitter-square {
+	color: #0084b4;
+}
+.fa-twitter-square:hover {
+	color: #00aced;
+}
+.fa-instagram {
+	color: #c1558b;
+}
+.fa-instagram:hover {
+	color: #8a49a1;
+}
+.fa-youtube-square {
+	color: #cc0000;
+}
+.fa-youtube-square:hover {
+	color: #ff0000;
+}
+@media (max-width:992px) {
+	.text-center span {
+		display: none;
+	}
+}
+@media ( max-width: 768px) {
+	.brand-image {
+		margin: 0 auto;
+	}
+	.aside {
+		margin: 0 auto;
+	}
+	.left-side-menu {
+		margin: 30px auto;
+		max-width: 60%;
+	}
+}
+@media ( max-width: 480px) {
+	.left-side-menu {
+		margin: 30px auto;
+		max-width: 90%;
+	}
+}

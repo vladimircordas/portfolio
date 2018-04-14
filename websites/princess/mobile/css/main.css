@@ -1,0 +1,246 @@
+/* CSS Document */
+
+/*border color : #d8339c*/
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bodywrapper {
+	width: 640px;
+	height: 1350px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-repeat:no-repeat;
+	background-image: url(../images/background.jpg);
+}
+
+.mattel_logo {
+	width: 281px;
+	height: 152px;
+	position: absolute;
+	background-image: url(../images/mattel_logo.png);
+	top: 0px;
+	left: 359px;
+}
+
+.logo {
+	width: 312px;
+	height: 272px;
+	background-image: url(../images/logo.png);
+	position: absolute;
+	top: 4px;
+	left: 50%;
+	margin-left:-156px;
+}
+
+.span_text {
+	font-family: Georgia;
+	font-size: 40px;
+	text-align: left;
+	margin-top: 70px;
+	margin-left: 390px;
+	z-index: 5;
+	text-decoration: none;
+	color:#FFF;
+}
+
+.girls_on_set {
+	width: 328px;
+	height: 330px;
+	background-image: url(../images/girls_on_set.png);
+	position: absolute;
+	bottom: 49px;
+	left: 50%;
+	margin-left: -164px;
+}
+
+.zoom_btn {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 272px;
+	left: 168px;
+	margin-left: -37px;
+	background-image: url(../images/girls_on_set_zoom.png);
+}
+
+.girls_on_set:hover .zoom_btn {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 272px;
+	left: 168px;
+	margin-left: -37px;
+	background-image: url(../images/zoom_button_hover.png);
+}
+
+spam {
+	width: 640px;
+	height: 224px;
+	font-family: Georgia;
+	font-size: 40px;
+}
+
+.button {
+	width: 640px;
+	height: 228px;
+	background-image: url(../images/button_background.png);
+	top: 289px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+}
+
+.button2 {
+	width: 640px;
+	height: 228px;
+	background-image: url(../images/button_background.png);
+	top: 515px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+}
+
+.button3 {
+	width: 640px;
+	height: 228px;
+	background-image: url(../images/button_background.png);
+	top: 741px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+}
+
+.button:hover, .button2:hover, .button3:hover {
+	background-image: url(../images/button_background_hover.png);
+}
+
+.play_btn{
+	width: 195px;
+	height: 190px;
+	background-image: url(../images/play_btn.png);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -97px;
+	margin-top: -95px;
+	z-index: 3;
+}
+
+.img_container {
+	width: 339px;
+	height: 199px;
+	position: absolute;
+	top:13px;
+	left: 18px;
+	z-index:2 ;
+}
+	
+img {
+	position:absolute;
+	z-index: 2;
+}
+
+
+/*sa redovnog sajta*/
+
+.filter {
+	height: 1350px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 5;
+	display: none;
+}
+
+.youtubeplayer{
+	height: 400px;
+	width: 640px;
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 6;
+	display: none;
+}
+
+.youtubeembedclose {
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: 0px;
+	left: 500px;
+	background-image: url(../images/girls_on_set_big_x.png);
+	z-index:7;
+}
+
+.girls_on_set_big {
+	height: 549px;
+	width: 640px;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 6;
+	background-image: url(../images/girls_on_set_big.png);
+	display: none;
+}
+
+.girls_on_set_big_x {
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: 56px;
+	left: 500px;
+	background-image: url(../images/girls_on_set_big_x.png);
+}
+
+.girls_on_set_big_x:hover {
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: 56px;
+	left: 500px;
+	background-image: url(../images/girls_on_set_big_x2.png);
+}
+
+.footer {
+	height: 30px;
+	bottom: 0px;
+	background-color: #b244a5;
+	width: 640px;
+	position: absolute;
+}
+
+.footer_txt {
+	font-family: arial;
+	margin: 0px auto;
+	position: relative;
+	font-family: arial;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #cb93b3;
+	padding-top: 7px;
+}
+
+.footer_txt a {
+	text-decoration: none;
+	color: #cb93b3;
+}
+
+.footer_txt span {
+	margin-left: 40px;
+}

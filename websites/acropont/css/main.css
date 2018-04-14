@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	border: 2em solid #27677e;
+	padding: 3em 2em 2em 2em;
+	
+}
+p {
+	margin: 0 0 5px;
+}
+li p {
+	color: white;
+	margin-bottom: 0px;
+}
+ul {
+    margin-left: -45px;
+}
+li {
+	color: white;
+    list-style-position: outside;
+}
+article p {
+	line-height: 2em;
+	text-align: justify;
+}
+h1 {
+	font-family: 'Veranda', sans-serif;
+	font-size: 2.3em;
+	font-weight: bolder;
+	color: #27677e;
+}
+.green p:last-child {
+	color: #8ac53f;
+	font-style: italic;
+    margin-bottom: 25px;
+}
+.green h1:first-child {
+	color: #8ac53f;
+}
+.normal-black p:first-of-type {
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+}
+.indent p {
+	margin-left: 20px;
+}
+.indent p:first-child {
+	font-weight: bold;
+	line-height: 25px;
+}
+/* FIRST COLUMN */
+/* SECTION ONE */
+#logo-acropont {
+	background-image: url('../img/acropont-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	margin-top: -20px;
+	width: 250px;
+}
+.border-left-right {
+	border-left: 2px solid #4e4e4e;
+	border-right: 2px solid #4e4e4e;
+}
+.border-top-bottom {
+	border-bottom: 2px solid #4e4e4e;
+	border-top: 2px solid #4e4e4e;
+}
+.border-bottom {
+	border-bottom: 2px solid #4e4e4e;
+}
+.background-color {
+	background-color: #27677e;
+}
+.margin-row {
+	margin: 21px 0 21px 0;
+}
+.margin-row-top {
+	margin: 0 0 21px 0;
+}
+.margin-top-min-25 {
+	margin-top: -25px;
+}
+.margin-top-min-20 {
+	margin-top: -20px;
+}
+.margin-top-10 {
+	margin-top: 7px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+/* SECTION TWO */
+.section-2-img-1 {
+	background-image: url('../img/section-2-img-1.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 6em;
+	margin-top: -20px;
+	width: 6em;
+}
+.section-2-img-2 {
+	background-image: url('../img/section-2-img-2.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin-top: -20px;
+	width: 6em;
+}
+.section-2-img-3 {
+	background-image: url('../img/section-2-img-3.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin-top: -20px;
+	width: 6em;
+}
+.section-2-img-4 {
+	background-image: url('../img/section-2-img-4.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin-top: -20px;
+	width: 6em;
+}
+.white p {
+	color: white;
+}
+.white p:last-child {
+	margin-bottom: 10px;
+}
+/* SECTION THREE */
+.section-3-img-1 {
+	background-image: url('../img/section-3-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin-left: -10px;
+	margin-top: -10px;
+	width: 6em;
+}
+.section-3-img-2 {
+	background-image: url('../img/section-3-img-2.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin-left: -10px;
+	margin-top: -10px;
+	width: 6em;
+}
+.black p {
+	color: black;
+	margin-bottom: 20px;
+}
+/* SECOND COLUM */
+/* SECTION FOUR */
+.section-4-img-1 {
+	background-image: url('../img/section-4-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin: 15px auto 0 auto;
+	width: 6em;
+}
+.section-4-img-2 {
+	background-image: url('../img/section-4-img-2.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin: 15px auto 0 auto;
+	width: 6em;
+}
+.section-4-img-3 {
+	background-image: url('../img/section-4-img-3.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin: 15px auto 0 auto;
+	width: 6em;
+}
+.section-4-img-4 {
+	background-position: center center;
+	background-image: url('../img/section-4-img-4.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 8em;
+	margin: 0 auto 0 auto;
+	width: 8em;
+}
+.section-4-img-5 {
+	background-image: url('../img/section-4-img-5.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 6em;
+	margin: 10px auto 0 auto;
+	width: 6em;
+}
+.section-4-img-6 {
+	background-image: url('../img/section-4-img-6.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 5em;
+	margin: 20px auto 0 auto;
+	width: 5em;
+}
+.black-align-center p{
+	color: black;
+	margin-bottom: 11px;
+	margin-top: 0.5em;
+	text-align: center;
+}
+.background-color-gray {
+	background-color: #4e4e4e;
+}
+/* SECTION FIVE */
+.section-5-img-1 {
+	background-image: url('../img/section-5-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 5em;
+	margin-left: -40px;
+	margin-top: -20px;
+    width: 9em;
+}
+/* THIRD COLUMN */
+/* SECTION SIX */
+.section-6-img-1 {
+	background-image: url('../img/section-6-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 8em;
+	margin: 10px auto 0 auto;
+    width: 8em;
+}
+.black-list li {
+	color: black;
+	margin-top: 0.7em;
+}
+.black-list li p {
+	color: black;
+}
+.black-list ul {
+
+	margin-left: -25px;
+}
+/* SECTION SEVEN */
+.section-7-img-1 {
+	background-image: url('../img/section-7-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 5em;
+	margin: 20px 0px 0px 0px;
+    width: 5em;
+}
+/* SECTION EIGHT */
+.section-8-img-1 {
+	background-image: url('../img/section-8-img-1.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+    height: 12em;
+    margin: 5px 0px 0px 0px;
+    width: 12em;
+}
+.call-us p {
+	font-weight: bold;
+	margin-top: 55px;
+}
+.social {
+	margin-top: 60px;
+	margin-left: -30px;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px){
+	h1 {
+		font-size: 1.8em;
+	}
+}
+@media only screen and (max-width: 992px) {
+	body {
+		border-color: #eee;
+		padding: 25px;
+	}
+	.acropont-hide {
+		visibility: hidden;
+	}
+	.border-left-right {
+		border: none;
+	}
+	.img-margin-offset {
+		margin-left: -25px;
+	}
+}
